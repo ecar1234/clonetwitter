@@ -7,7 +7,7 @@ import Profile from 'routes/Profile';
 
 
 
-const AppRouter = ({ isLoggedIn }) => {
+const AppRouter = ({ isLoggedIn, userObj }) => {
    
     return (
         <>
@@ -16,7 +16,7 @@ const AppRouter = ({ isLoggedIn }) => {
             {isLoggedIn ? 
             <>
                 <Route exact path="/">
-                    <Home />
+                    <Home userObj={userObj} />
                 </Route>
                 <Route path="/profile">
                     <Profile />
