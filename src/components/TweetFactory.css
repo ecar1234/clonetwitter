@@ -1,0 +1,82 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    flex-direction: column;
+}
+.factory_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.factory_input_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.factory_input {
+    flex-grow: 1;
+    height: 50px;
+    padding: 0px 20px;
+    color: white;
+    border: 1px solid #04aaff;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.factory_submit {
+    position: absolute;
+    right: 0;
+    background-color: #04aaff;
+    height: 50px;
+    width: 50px;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+}
+.factoryInput_label {
+    color: #04aaff;
+    cursor: pointer;
+    z-index: -1;
+}
+.factoryInput_label span {
+    margin-right: 10px;
+    font-size: 12px;
+}
+.factoryForm_file {
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+} 
+.factoryForm_attachment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.factoryForm_attachment img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+  
+.factoryForm_clear {
+    color: #04aaff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.factoryForm_clear span {
+    margin-right: 10px;
+    font-size: 12px;
+}

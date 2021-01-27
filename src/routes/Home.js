@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { dbService } from 'fbase';
-import Tweets from 'components/Tweets'
+import Tweets from 'components/Tweets';
+import TweetFactory from 'components/TweetFactory';
+import 'routes/Home.css'
 
 
 const Home = ({ userObj }) => {
-    const [newTweet, setNewTweet] = useState("");
+
     const [tweets, setTweets] = useState([]);
+    
+
     // 데이터를 받아오는 방법(1) : get으로 받아온 데이터를 forEach 로 분할
     // const getTweets = async() => {
     //     const dbTweets = await dbService.collection("tweets").get();
@@ -31,47 +35,22 @@ const Home = ({ userObj }) => {
 
     },[]);
 
-    const onSubmit = async(e) => {
-        e.preventDefault();
-        await dbService.collection("tweets").add({
-            text: newTweet,
-            createdAt: Date.now(),
-            userId: userObj.uid
-        });
-        setNewTweet("");
-    }; 
-
-    const onChange = (e) => {
-       const { 
-            target:{value}
-       } = e;
-       setNewTweet(value);
-    };
     
+
     return (
-       <div>
-           <div className="newTweet_wrap">
-               <form onSubmit={onSubmit}>
-                   <input value={newTweet} 
-                   onChange={onChange} 
-                   type="text" 
-                   placeholder="What's on your mind?" 
-                   maxLength={120} />
-                   <input 
-                   type="submit" 
-                   value="Go Tweet" />
-               </form>
-               <div>
-                   {tweets.map(tweet => (
-                       <Tweets 
-                       key={tweet.id} 
-                       tweetObj={tweet} 
-                       isOwner={tweet.userId === userObj.uid}
-                        />
-                   ))}
-               </div>
-           </div>
-       </div>
+       <div className="home_container">
+            <TweetFactory userObj={userObj} />
+            <div>
+                {tweets.map(tweet => (
+                    <Tweets 
+                    key={tweet.id} 
+                    userObj={userObj}
+                    tweetObj={tweet} 
+                    isOwner={tweet.userId === userObj.uid}
+                    />
+                ))}
+            </div>
+        </div>
     );
 };
 
