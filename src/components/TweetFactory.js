@@ -18,7 +18,6 @@ const TweetFactory = ({ userObj }) => {
         e.preventDefault();
         let attachmentUrl = "";
         setCurId(userObj.displayName);
-        console.log(curId)
         let day = (new Date()).toISOString().substr(0, 10);
         let h = (new Date()).getHours();
         let m = (new Date()).getMinutes();
