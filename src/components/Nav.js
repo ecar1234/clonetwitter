@@ -10,7 +10,7 @@ const Nav = ({ userObj }) => {
         <nav>
             <ul style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>
                 <li>
-                    <Link to="/" style={{ 
+                    <Link to="/clonetwitter" style={{ 
                         marginRight: 10,
                         display: "flex",
                         flexDirection: "column",

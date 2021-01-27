@@ -41,6 +41,12 @@
     border-radius: 25px;
     color: white;
 }
+.empty_error {
+    visibility: hidden;
+    color: tomato;
+    margin-bottom: 10px;
+}
+
 .factoryInput_label {
     color: #04aaff;
     cursor: pointer;

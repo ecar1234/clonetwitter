@@ -10,35 +10,39 @@ const TweetFactory = ({ userObj }) => {
     const [newTweet, setNewTweet] = useState("");
     const [attachment, setAttachment] = useState("");
     const [curId, setCurId] = useState("")
-
+    const empty = document.querySelector(".empty_error")
+   
     const onSubmit = async(e) => {
         if(newTweet === "") {
-            return;
+            return empty.style.visibility="visible"
         }
-        e.preventDefault();
-        let attachmentUrl = "";
-        setCurId(userObj.displayName);
-        let day = (new Date()).toISOString().substr(0, 10);
-        let h = (new Date()).getHours();
-        let m = (new Date()).getMinutes();
-        let s = (new Date()).getSeconds();
-        
-        if(attachment !== ""){
-            const attachmentRef = storeService.ref().child(`${userObj.uid}/${uuidV4()}`);
-            const response = await attachmentRef.putString(attachment, "data_url");
-            attachmentUrl = await response.ref.getDownloadURL();
+        else{
+            e.preventDefault();
+            empty.style.visibility="hidden"
+            let attachmentUrl = "";
+            setCurId(userObj.displayName);
+            let day = (new Date()).toISOString().substr(0, 10);
+            let h = (new Date()).getHours();
+            let m = (new Date()).getMinutes();
+            let s = (new Date()).getSeconds();
+            
+            if(attachment !== ""){
+                const attachmentRef = storeService.ref().child(`${userObj.uid}/${uuidV4()}`);
+                const response = await attachmentRef.putString(attachment, "data_url");
+                attachmentUrl = await response.ref.getDownloadURL();
+            }
+           
+            const tweet = {
+                text: newTweet,
+                createdAt: `${day} ${h}:${m}:${s}`,
+                userId: userObj.uid,
+                curId: curId || "Guest" ,
+                attachmentUrl
+            };
+            await dbService.collection("tweets").add(tweet);
+            setNewTweet("");
+            setAttachment("")
         }
-       
-        const tweet = {
-            text: newTweet,
-            createdAt: `${day} ${h}:${m}:${s}`,
-            userId: userObj.uid,
-            curId: curId || "Guest" ,
-            attachmentUrl
-        };
-        await dbService.collection("tweets").add(tweet);
-        setNewTweet("");
-        setAttachment("")
     }; 
 
     const onChange = (e) => {
@@ -78,6 +82,7 @@ const TweetFactory = ({ userObj }) => {
                     value="Go Tweet" />
                </div>
             </form>
+            <div className="empty_error">Please enter your twwet!!</div>
             <label className="factoryInput_label" htmlFor="attach_file" >
                 <span>Add photos</span>
                 <FontAwesomeIcon icon={faPlus} />
