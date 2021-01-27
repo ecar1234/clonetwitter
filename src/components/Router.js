@@ -15,7 +15,7 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
         <Switch>
             {isLoggedIn ? 
             <>
-                <Route exact path="/">
+                <Route exact path="/clonetwitter">
                     <Home userObj={userObj} />
                 </Route>
                 <Route path="/profile">
@@ -23,7 +23,7 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
                 </Route>
             </> : 
             <>
-                <Route exact path="/">
+                <Route exact path="/clonetwitter">
                     <Auth />
                 </Route>
             </> }

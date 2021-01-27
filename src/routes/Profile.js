@@ -10,7 +10,7 @@ const Profile = ({ refreshUser, userObj }) => {
     const history = useHistory();
     const onLogOutClick = () => {
         authService.signOut();
-        history.push("/");
+        history.push("/clonetwitter");
     };
 
     const onChange = (e) => {
