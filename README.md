@@ -7,10 +7,10 @@
 <img src="https://img.shields.io/badge/firebasw-ffca28?style=for-the-badge&logo=firebase&logoColor=white"/>
 </p>
 
- ### Deploy 
+ ### :rocket: Deploy 
  https://ecar1234.github.io/clonetwitter
 
- ### service pic
+ ### :construction: service picture
  <p>
  <p>메인화면</p>
   <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
