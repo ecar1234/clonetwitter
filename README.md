@@ -12,24 +12,52 @@
 
  ### service pic
  <p>
- <p>
- 메인화면
- </p>
+ <p>메인화면</p>
   <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
  </p>
-  회원가입
+ 
+ <p>
+ <p>회원가입</p>
+  <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
+ </p>
+ 
+ <p>
+ <p>로그인</p>
+  <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
+ </p>
+ 
+ <p>
+ <p>tweet 작성</p>
+  <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
+ </p>
+ 
+ <p>
+ <p>사진 업로드</p>
+  <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
+ </p>
+ 
+ <p>
+ <p>트윗 수정</p>
+  <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
+ </p>
+ 
+ <p>
+ <p>메인화면</p>
+  <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
+ </p>
   
-  로그인
+  <p>
+ <p>회원정보</p>
+  <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
+ </p>
+ 
+ <p>
+ <p>회원정보 변경</p>
+  <img width="600px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
+ </p>
+
   
-  tweet 작성
   
-  사진 업로드
-  
-  트윗 수정
-  
-  트윗 삭제 
-  
-  회원정보
   
   회원정보 변경
   
