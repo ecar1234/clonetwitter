@@ -9,3 +9,24 @@
 
  ### Deploy 
  https://ecar1234.github.io/clonetwitter
+
+ ### service pic
+  메인화면
+  ![메인화면]("")
+  
+  회원가입
+  
+  로그인
+  
+  tweet 작성
+  
+  사진 업로드
+  
+  트윗 수정
+  
+  트윗 삭제 
+  
+  회원정보
+  
+  회원정보 변경
+  
