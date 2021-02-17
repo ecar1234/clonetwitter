@@ -1,4 +1,4 @@
-### Twitter clone coding
+# Twitter clone practice
 
 ### :hammer: Stack
 <p>
