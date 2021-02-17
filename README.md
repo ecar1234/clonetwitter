@@ -12,7 +12,9 @@
 
  ### service pic
  <p>
-  메인화면
+ <p>
+ 메인화면
+ </p>
   <img width="400px" src="https://user-images.githubusercontent.com/68783317/108155108-a15cb900-7121-11eb-822b-3f7cb30c7164.PNG"/>
  </p>
   회원가입
